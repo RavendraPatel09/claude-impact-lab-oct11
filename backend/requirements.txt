@@ -1,0 +1,15 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+httpx>=0.28.0
+
+# Semantic retrieval (optional at runtime: degrades to keyword-only search
+# if these aren't installed or the model/index fails to load)
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+
+# LLM-grounded answer generation (optional at runtime: falls back to a
+# deterministic excerpt-based answer if ANTHROPIC_API_KEY isn't set)
+anthropic>=0.40.0
